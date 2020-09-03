@@ -10,8 +10,7 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 
 
-<body onload="preloaderfunction()">
-	<div id="preloader"></div>
+<body>
     <div class="banner" id="home">
 		<video loop="" autoplay="" muted="" ><source src="stars.mp4" type="video/mp4">
 		</video>
@@ -154,12 +153,6 @@ function scrollFunction() {
     document.getElementById("navbar").style.top = "-70px";
   }
 }
-
- preloader=document.getElementById("preloader");
- function preloaderfunction(){
- 	console.log('function working');
- 	preloader.style.display="none";
- }
 </script>
 <script type="text/javascript"> 
                 var filterizd = $('.filter-container').filterizr({});
