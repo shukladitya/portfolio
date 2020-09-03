@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 
 
-<body>
+<body onload="refreshfunction();">
     <div class="banner" id="home">
 		<video poster="videoposter.png" loop="" autoplay="" muted="" ><source src="stars.mp4" type="video/mp4">
 		</video>
@@ -138,7 +138,8 @@
 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></section>
 	</div>
-    
+    <div class="powr-contact-form" id="cecdc867_1597391384"></div>
+    <script src="https://www.powr.io/powr.js?platform=embed"></script>
     <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="jquery.filterizr.min.js"></script>
     <script>
@@ -151,6 +152,13 @@ function scrollFunction() {
   } else {
     document.getElementById("navbar").style.top = "-70px";
   }
+}
+function refreshfunction(){
+	if(!window.location.hash) 
+	{
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
 }
 </script>
 <script type="text/javascript"> 
