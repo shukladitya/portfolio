@@ -4,14 +4,15 @@
 
 	<title>itsaditya</title>
 	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <link rel="stylesheet" type="text/css" href="style.css">
 
 
-<body>
-
-	<div class="banner" id="home">
+<body onload="preloaderfunction()">
+	<div id="preloader"></div>
+    <div class="banner" id="home">
 		<video loop="" autoplay="" muted="" ><source src="stars.mp4" type="video/mp4">
 		</video>
 		<div class="content">
@@ -153,6 +154,12 @@ function scrollFunction() {
     document.getElementById("navbar").style.top = "-70px";
   }
 }
+
+ preloader=document.getElementById("preloader");
+ function preloaderfunction(){
+ 	console.log('function working');
+ 	preloader.style.display="none";
+ }
 </script>
 <script type="text/javascript"> 
                 var filterizd = $('.filter-container').filterizr({});
