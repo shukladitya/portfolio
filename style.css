@@ -140,6 +140,10 @@ div a{margin:6px;padding: 5px; }
 #projects li:hover{color: dodgerblue;
   border-color: dodgerblue;
 }
-.filtr-item img{height: 30vh; margin: 30px 0px 30px 60px;box-shadow: 0 2px 20px rgba(0,0,0,0.5);}
+.filtr-item img{
+  height: 30vh; 
+  margin: 30px 0px 30px 60px;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+}
 
 section:nth-child(odd){background-color:#C0C0C0;}
