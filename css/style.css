@@ -1,8 +1,10 @@
 :root{
 	--backgroundcolor:#FAFAFA;
+	--backgroundgradient:#D8D8D8;
 	--iconnotselected:#7D7D7D;
 	--iconhover:black;
 	--text:black;
+	--shadowcolor:#7D7D7D;
 }
 @font-face {
     font-family: 'Calibre';
@@ -14,11 +16,11 @@
     font-style: normal;
   }
 body{
-	background-color: var(--backgroundcolor);
 	padding:0;
 	margin: 0;
 	font-family: sans-serif;
 	transition: all 1s;
+	background-image: linear-gradient(var(--backgroundcolor) 92%,var(--backgroundgradient));
 }
 ::-moz-selection { /* Code for Firefox */;
   background: #FCDF3D;
@@ -130,7 +132,7 @@ body{
 	margin: 0;
 	padding: 0;
 }
-#resumelink{
+.furtherlink{
 	clear: both;
 	margin-left: 20%;
 	font-size: 20px;
@@ -140,7 +142,7 @@ body{
 	cursor: pointer;
 	color: var(--iconhover);
 }
-#resumelink:hover{
+.furtherlink:hover{
 	color:var(--iconnotselected);
 }
 /*-------------------------------------------projects---------------------------------*/
@@ -197,6 +199,7 @@ body{
 	float: right;
 	clear: right;
 	margin-bottom: 100px;
+	cursor: pointer;
 }
 #projects p{
 	color: var(--text);
@@ -226,6 +229,7 @@ body{
 	clear: left;
 	margin-left: 20%;
 	margin-bottom: 100px;
+	cursor: pointer;
 }
 #project2p{
 	color: var(--text);
@@ -238,9 +242,185 @@ body{
 	background-size: contain;
 	background-repeat: no-repeat;
 	float: right;
+	cursor: pointer;
 }
 #project3p{
     clear: left;
     margin-right: 20%;
     color: var(--text);
+}
+/*--------------------------------------------------------blogs-------------------------------------*/
+#blogs{
+	margin-left: 100px;
+	margin-right: 100px;
+}
+#blogs h2{
+	color: var(--text);
+	clear: left;
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-decoration: underline #F7C94B;
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 100px;
+}
+#blogs i{
+	float: right;
+	font-size: 25px;
+	margin-left: 50px;
+	cursor: pointer;
+	transition: all 0.7s;
+	transition-timing-function: cubic-bezier(0, 0.55, 1, 2.15);
+}
+.fa-th-large{
+	color: var(--iconhover);
+}
+.fa-th-list{
+	color: var(--iconnotselected);
+}
+.selectedicon{
+	color: var(--iconhover);
+}
+.notselectedicon{
+	color: var(--iconnotselected);
+}
+.blogimage{
+	position: relative;
+	bottom: 0px;
+	height: 42vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0px 30px 100px -20px var(--shadowcolor);
+	transition: all 0.5s;
+	cursor: pointer;
+}
+.blogimagelist{
+	width: 50%;
+}
+.blogimage:hover{
+	position: relative;
+	bottom: 3px;
+	box-shadow: 0px 40px 80px 0px var(--shadowcolor);
+}
+#blogs h3{
+	font-family: serif;
+	font-size: 1.4em;
+	margin-top: 30px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	color: var(--text);
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.blogtitlelist{
+	float:right;
+	position: relative;
+	bottom: 200px;
+}
+#blogs h3:hover{
+	color: #0C71E0;
+}
+#blogs h4{
+		margin-top: 5px;
+	    padding-top: 0;
+	    margin-bottom: 50px;
+	    color: var(--iconnotselected);
+}
+.blogsubtitlelist{
+	float:right;
+	clear: right;
+	position: relative;
+	bottom: 200px;
+}
+.blog1tile{
+	width: 58.5%;
+	float: left;
+	clear: left;
+	position: relative;
+}
+.blog1list{
+	width: 100%;
+	float: left;
+	clear: left;
+}
+#blog1 .blogimage{
+	background-image: url("asset/blogs/flutter.jpg");
+}
+.blog2tile{
+	width: 39%;
+	float: right;
+	clear: right;
+}
+.blog2list{
+	width: 100%;
+	float: left;
+	clear: left;
+}
+#blog2 .blogimage{
+	background-image: url("asset/blogs/arrayfunc.jpg");
+}
+.blog3tile{
+	width: 39%;
+	float: left;
+	clear: left;
+}
+.blog3list{
+	width: 100%;
+	float: left;
+	clear: left;
+}
+#blog3 .blogimage{
+	background-image: url("asset/blogs/eventc.jpg");
+}
+.blog4tile{
+	width: 58.5%;
+	float: right;
+	clear: right;
+}
+.blog4list{
+	width: 100%;
+	float: left;
+	clear: left;
+}
+#blog4 .blogimage{
+	background-image: url("asset/blogs/csstricks.jpg");
+}
+/*--------------------------------------------------bottombar------------------------------------*/
+#bottombar{
+	margin-left: 100px;
+	margin-right: 100px;
+}
+#spacer{
+	clear: both;
+	height: 100px;
+	width: 100%;
+}
+#line{
+	height: 1px;
+	background-color: #BCBEC2;
+	width: 100%;
+	clear: both;
+}
+#bottombar h3{
+	color: var(--iconnotselected);
+	margin-top: 50px;
+	font-family: 'Calibre';
+	padding-bottom: 80px;
+}
+#bottombar i{
+	color:var(--iconnotselected);
+	font-size: 20px;
+	margin-top: 20px;
+	margin-right: 20px;
+	cursor: pointer;
+    transition: all 0.7s;
+	transition-timing-function: cubic-bezier(0, 0.55, 1, 2.15);
+	float: right;
+	position: relative;
+	bottom: 10px;
+}
+#bottombar i:hover{
+	color: var(--iconhover);
 }
