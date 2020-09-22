@@ -1,103 +1,165 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>Aditya Shukla</title>
-	<link rel="icon" href="css/asset/logodark.png" type="image/png" sizes="16x16">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
-	<div id="topbar">
-		<div id="logo" onclick="location.href='index.html';"></div>
-		<i class="fas fa-moon"></i>
-		<i class="fas fa-link"></i>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<body onload="refreshfunction();">
+    <div class="banner" id="home">
+		<video poster="videoposter.png" loop="" autoplay="" muted="" ><source src="stars.mp4" type="video/mp4">
+		</video>
+		<div class="content">
+			<h1>Aditya&nbsp;Shukla</h1>
+		    <h2>Developer, Designer and Digital nomad.</h2>
+		    <h4>Passion for building products. Particular about design, UI and creating intuitive, dynamic user experiences. A cinephile when jaded.</h4>
+		   
+		<nav>
+			<a href="#projects" class="ordi">Projects</a>
+			<a href="#resume" class="ordi">Résumé</a>
+			<a href="#blogs" class="ordi">Blogs</a>
+			<a href="https://www.linkedin.com/in/aditya10/" target="_blank" class="sp"><i class="fab fa-linkedin"></i></a>
+			<a href="https://github.com/shukladitya" target="_blank" class="sp"><i class="fab fa-github"></i></a>
+			<a href="https://www.facebook.com/profile.php?id=100008226843610" target="_blank" class="sp"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.instagram.com/adity.a.s/" target="_blank" class="sp"><i class="fab fa-instagram"></i></a>
+			<a href="" target="_blank" class="sp"><i class="fab fa-medium"></i></a>
+		</nav>
 	</div>
-	<div id="intro">
-		<h1>Hi. I'm Aditya. A design minded developer focused on building beautiful interfaces & experiences.</h1>
-		<div id="outerradi">
-			<div id="avatar"></div>
-		</div>
-		<h2 id="mail">Get in touch<br></h2>
-		<h2 id="email" onclick="location.href='mailto:shukladitya9@gmail.com';">shukladitya9@gmail.com</h2>
+</div>
+
+<div id="navbar">
+  <a href="#home">Aditya Shukla</a>
+  <a href="#contact">Contact</a>
+  <a href="#blogs">Blogs</a>
+  <a href="#resume">Résumé</a>
+  <a href="#projects">Projects</a>
+  <a href="#about">About</a>
+</div>
+
+	
+<div class="pages">
+    <section id="about"><h1 class="tag">ABOUT</h1>
+    	<div class="avtar">
+    		<img src="photo.jpg" class="pic" >
+      		<p>
+                I am an undergraduate student based in Bengaluru, India. I develop mobile/web applications. Though&nbsp;learning or working on something new makes me overjoyed, I don't sink my teeth into something, to which I can't give my 100%.
+            </p>
+        </div>
+    	<div class="tools"><h2>Skills and Experience</h2>
+  <div class="row">
+  <div class="column">
+    <img src="logof/flutter.png" alt="Flutter" style="width:45%">
+  </div>
+  <div class="column">
+    <img src="logof/html.png" alt="Forest" style="width:45%">
+  </div>
+  <div class="column">
+    <img src="logof/css.png" alt="Mountains" style="width:45%">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="logof/js.png" alt="Snow" style="width:45%">
+  </div>
+  <div class="column">
+    <img src="logof/bootstrap.png" alt="Forest" style="width:45%">
+  </div>
+  <div class="column">
+    <img src="logof/jq.png" alt="Mountains" style="width:45%">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="logof/wp.png" alt="Snow" style="width:45%">
+  </div>
+  <div class="column">
+    <img src="logof/cp.png" alt="Forest" style="width:45%">
+  </div>
+  <div class="column">
+    <img src="logof/python.png" alt="Mountains" style="width:45%">
+  </div>
+</div>
+    	</div>
+     </section>
+   
+<div id="projects">
+    <section ><h1 class="tag">PORTFOLIO</h1>
+    	<ul>
+  <!-- For filtering controls add -->
+              <li data-filter="1"> All </li>
+              <li data-filter="2"> Flutter </li>
+              <li data-filter="3"> Web </li>
+              <li data-filter="4"> Design </li>
+  
+        </ul>
+    	<div class="filter-container">
+          <div class="filtr-item" data-category="1,2,4" data-sort="value">
+            <a href=""><img src="projects/f1.jpg" alt="sample"/></a>
+         </div>
+         <div class="filtr-item" data-category="2,1,4" data-sort="value">
+            <a href=""><img src="projects/f2.jpg" alt="sample" /></a>
+         </div>
+         <div class="filtr-item" data-category="1,2,4" data-sort="value">
+            <a href=""><img src="projects/f3.jpg" alt="sample" /></a>
+         </div>
+         <div class="filtr-item" data-category="1, 3" data-sort="value">
+            <a href=""><img src="projects/f4.png" alt="sample" /></a>
+         </div>
+         <div class="filtr-item" data-category="1, 3" data-sort="value">
+            <a href=""><img src="projects/f5.png" alt="sample" /></a>
+         </div>
+         <div class="filtr-item" data-category="4,1" data-sort="value">
+            <a href=""><img src="projects/f6.jpg" alt="sample" /></a>
+         </div>
+       </div>
+   </section>
+</div>
+    <div id="blogs"><h1 class="tag">BLOGS</h1>
+    	</div>
+    	<div id="posts">
+    	  <div id="blog1" class="blog">
+    	  </div>
+    	  <div id="blog2" class="blog">
+    	  </div>
+    	  <div id="blog3" class="blog">
+    	  </div>
+    	   <div id="blog4" class="blog">
+    	  </div>
+        </div>
+    
+	<section id="contact"><h1 class="tag">CONTACT</h1></section>
 	</div>
-	<div id="background">
-		<h2>Background</h2>
-		<p>I am an undergraduate student based in Bengaluru, India. I develop mobile/web applications. Though learning or working on something new makes me overjoyed, I don't sink my teeth into something, to which I can't give my 100%.<br><br>
-        As a developer, I enjoy bridging the gap between engineering and design — combining my technical knowledge with my keen eye for design to create a beautiful product. My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences.<br><br></p>
-        <h3 class="furtherlink" onclick="window.open('resume/aditya_resume.pdf')">View Résumé&nbsp&nbsp<i class="fas fa-arrow-right"></i></h3>
-       
-	</div>
-	<div id="projects">
-		<h2>Projects</h2>
-		<div id="project1" onclick="toogletasto();"></div>
-		<p>An android app using TasteDive API to generate similar items under same genre of Movies, Games, Authors, Music, Books etc. Using shared preferences, the choices of the user can be cashed for future use.<br>
-		<i class="fas fa-play-circle" onclick="toogletasto();"></i>
-		<i class="fab fa-google-play" onclick="window.open('http://www.mediafire.com/file/9dp1ckpx05q3a7t/tasto.apk/file')"></i>
-		<i class="fab fa-github" onclick="window.open('https://github.com/shukladitya/flutter_tasto')"></i>	
-		</p>
-		<div id="tastovideo" class="popup">
-			<div class="popupbox"><i class="fas fa-times" onclick="toogletasto();"></i>
-				<video id="vid1" controls src="video/tasto.m4v">
-                </video>
-            </div>
-		</div>
-		<div id="project2" onclick="toogleatmo()"></div>
-		<p id="project2p">An App that picks the coordinate of the device , tells weather, air quality and forecasts of the location and warns on harsh conditions.<br>
-		<i class="fas fa-play-circle" onclick="toogleatmo()"></i>
-		<i class="fab fa-google-play" onclick="window.open('http://www.mediafire.com/file/y5vvfrhqppkoajj/Atmo.apk/file')"></i>
-		<i class="fab fa-github" onclick="window.open('https://github.com/shukladitya/flutter_atmo')"></i>	
-		</p>
-		<div id="atmovideo" class="popup">
-			<div class="popupbox"><i class="fas fa-times" onclick="toogleatmo()"></i>
-				<video id="vid2" controls src="video/atmo.m4v">
-                </video>
-            </div>
-		</div>
-		<div id="project3" onclick="window.open('old_portfolio/index.html')"></div>
-		<p id="project3p">A responsive SPA resume template, built with HTML, CSS, JS and bootstrap. Minimal design ,smooth performance in animations and functionalities.<br>
-		<i class="fas fa-play-circle" onclick="window.open('old_portfolio/index.html')"></i>
-		<i class="fab fa-github" onclick="window.open('https://github.com/shukladitya/flutter_tasto')"></i>	
-		</p>
-		<h3 class="furtherlink" onclick="window.open('resume/aditya_resume.pdf')">View all projects&nbsp&nbsp<i class="fas fa-arrow-right"></i></h3>
-	</div>
-	<div id="blogs">
-		<h2>Blogs</h2>
-		<i class="fas fa-th-list" id="listview" onclick="blogview=1;toggleview()"></i>
-		<i class="fas fa-th-large" id="tileview" onclick="blogview=0; toggleview()"></i>
-		<div class="blog blog1tile" id="blog1">
-			<div class="blogimage"></div>
-			<h3 class="title">Handy Widgets of Flutter</h3>
-			<h4 class="subtitle">September 15, 2020 - 5 min read</h4>
-		</div>
-		<div class="blog blog2tile" id="blog2">
-			<div class="blogimage"></div>
-			<h3 class="title">Array Functions in JS</h3>
-			<h4 class="subtitle">September 15, 2020 - 7 min read</h4>
-		</div>
-		<div class="blog blog3tile" id="blog3">
-			<div class="blogimage"></div>
-			<h3 class="title">Event Programming with C</h3>
-			<h4 class="subtitle">September 15, 2020 - 3 min read</h4>
-		</div>
-		<div class="blog blog4tile" id="blog4">
-			<div class="blogimage"></div>
-			<h3 class="title">CSS One-Liner Tricks</h3>
-			<h4 class="subtitle">September 15, 2020 - 5 min read</h4>
-		</div>
-	</div>
-	<div id="bottombar">
-		<div id="spacer">
-		</div>
-		<div id="line">
-		</div>
-		<h3>2020 Aditya Shukla
-		<i class="fab fa-medium" onclick="window.open('www.medium.com')"></i>
-		<i class="fab fa-instagram" onclick="window.open('https://www.instagram.com/adity.a.s/')"></i>
-		<i class="fab fa-facebook" onclick="window.open('https://www.facebook.com/profile.php?id=100008226843610')"></i>
-		<i class="fab fa-github" onclick="window.open('https://github.com/shukladitya')"></i>
-		<i class="fab fa-linkedin" onclick="window.open('https://www.linkedin.com/in/aditya10/')"></i>
-		</h3>
-    </div>
-<script type="text/javascript" src="js/JS.js"></script>	
+    <div class="powr-contact-form" id="cecdc867_1597391384"></div>
+    <script src="https://www.powr.io/powr.js?platform=embed"></script>
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="jquery.filterizr.min.js"></script>
+    <script>
+// When the user scrolls down 700px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-70px";
+  }
+}
+function refreshfunction(){
+	if(!window.location.hash) 
+	{
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+}
+</script>
+<script type="text/javascript"> 
+                var filterizd = $('.filter-container').filterizr({});
+</script>
+
 </body>
 </html>
